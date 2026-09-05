@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2563eb">
+<title>DHEERAJ GK — GK & Current Affairs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">DG</span><div><b>DHEERAJ GK</b><small>GK • Current Affairs • Quiz</small></div></div>
+  <button id="themeBtn" class="iconbtn" aria-label="Theme">☾</button>
+</header>
+
+<main>
+<section class="hero">
+  <p class="eyebrow">प्रतियोगी परीक्षाओं की तैयारी</p>
+  <h1>पढ़ो कम, याद रखो ज्यादा।</h1>
+  <p>Daily Current Affairs, GK और MCQ Quiz — एक ही जगह।</p>
+  <div class="search"><span>⌕</span><input id="search" placeholder="किसी प्रश्न या विषय को खोजें..."></div>
+</section>
+
+<section class="section">
+  <div class="sectionhead"><h2>आज क्या पढ़ें?</h2><span id="date"></span></div>
+  <div class="grid">
+    <button class="card" data-filter="current"><span class="emoji">📰</span><b>Current Affairs</b><small>आज की महत्वपूर्ण खबरें</small></button>
+    <button class="card" data-filter="quiz"><span class="emoji">🧠</span><b>Daily Quiz</b><small>MCQ से अपना टेस्ट लें</small></button>
+    <button class="card" data-filter="static"><span class="emoji">📚</span><b>Static GK</b><small>बार-बार पूछे जाने वाले तथ्य</small></button>
+    <button class="card" data-filter="bihar"><span class="emoji">🇮🇳</span><b>Bihar GK</b><small>बिहार विशेष जानकारी</small></button>
+  </div>
+</section>
+
+<section class="section" id="content">
+  <div class="sectionhead"><h2>आज का Current Affairs</h2><button class="linkbtn" id="showAll">सभी देखें →</button></div>
+  <div id="items" class="items"></div>
+</section>
+
+<section class="section quizbox" id="quiz">
+  <div class="sectionhead"><h2>🧠 Daily Quiz</h2><span id="progress">1 / 5</span></div>
+  <div id="quizArea"></div>
+</section>
+</main>
+
+<nav class="bottomnav">
+  <button class="active" data-scroll="top">⌂<small>होम</small></button>
+  <button data-scroll="content">📰<small>Current</small></button>
+  <button data-scroll="quiz">🧠<small>Quiz</small></button>
+  <button data-scroll="top">🔖<small>Saved</small></button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
